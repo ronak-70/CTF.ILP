@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Calculator</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #f8cdda, #1d2b64);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        color: #ffb6c1;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background-color: #fa5252;
+        transform: scale(1.05);
+      }
+
+      .numbers,
+      .results {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 400px;
+        margin: 10px 0;
+        text-align: left;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a Calculator with Random Numbers</h1>
+    <button onclick="generate()">Generate Numbers</button>
+
+    <div class="numbers">
+      <p id="num1">1. Number:</p>
+      <p id="num2">2. Number:</p>
+    </div>
+
+    <div class="results">
+      <p id="addi">Addition:</p>
+      <p id="sub">Subtraction:</p>
+      <p id="multi">Multiplication:</p>
+      <p id="div">Division:</p>
+    </div>
+
+    <script>
+      function generate() {
+        let a = Math.floor(Math.random() * 100);
+        let b = Math.floor(Math.random() * 100);
+
+        document.getElementById("num1").innerText = "1. Number: " + a;
+        document.getElementById("num2").innerText = "2. Number: " + b;
+        document.getElementById("addi").innerText = "Addition: " + (a + b);
+        document.getElementById("sub").innerText = "Subtraction: " + (a - b);
+        document.getElementById("multi").innerText = "Multiplication: " + a * b;
+        document.getElementById("div").innerText =
+          "Division: " + (a / b).toFixed(2);
+      }
+    </script>
+  </body>
+</html>
