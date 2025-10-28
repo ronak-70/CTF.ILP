@@ -1,0 +1,12 @@
+1. auf der Spiegel.de Webseite 
+
+1.1 User-Agent: Mozilla/5.0 (Windows NT 10.0;
+Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110
+Safari/537.3
+1.2 Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+1.3 Content-Type: text/html; charset=UTF-8
+1.4 Cache-Control: public,max-age=0,s-maxage=90
+1.5 Set-Cookie: sp_su=false;kndctr_79655FCF5C1D42160A495E15_AdobeOrg_cluster=irl1;
+
+2. wesentlichen Unterschiede zwischen HTTP/1.1 und HTTP/2 : HPACK-Header-Komprimierung,
+ HTTP/2 verwendet ein binäres Protokoll anstelle des Textprotokolls von HTTP/1.1
