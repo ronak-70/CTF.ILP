@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #f490d6;
+        padding: 20px;
+        text-align: center;
+      }
+      form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #8cd5e9;
+        border-radius: 5px;
+        background: #fff;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background: #5cb85c;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="kontakt">Projekt-Anfrage</h1>
+      <p>Fülle das Formular aus, um eine Anfrage zu senden.</p>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="füge deine Name hinzu"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="füge deine Email hinzu"
+        />
+        <fieldset style="background-color: beige">
+          <legend>Art der Anfrage</legend>
+          <label>
+            <input type="radio" name="anfrage_typ" value="angebot" required />
+            Angebot
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="anfrage_typ" value="frage" />
+            Allgemeine Frage
+          </label>
+        </fieldset>
+        <label for="message">Nachricht:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="9"
+          required
+          placeholder="Beschreibe kurz dein Projekt oder deine Frage"
+        ></textarea>
+        <br />
+        <label>
+          <input type="checkbox" id="privacy" required /> Ich akzeptiere die
+          <a href="/privacy.html" target="_blank" rel="noopener noreferrer"
+            >Datenschutzbestimmungen</a
+          >
+        </label>
+        <br />
+        <button type="submit">Anfrage abschicken</button>
+      </form>
+      <p><a href="../index.html">Zurück zur Übersicht</a></p>
+    </header>
+  </body>
+</html>
