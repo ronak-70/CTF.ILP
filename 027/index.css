@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main: #e7d8c9;
+  --highlight: #c44536;
+  --font-stack: #197278;
+  --my-color: #283d3b;
+  --my-color-2: #772e25;
+}
+body {
+  font-family: "Inter", "Raleway", "Roboto", sans-serif;
+  background-color: var(--main);
+  color: var(--font-stack);
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 3rem;
+  justify-content: space-between;
+  background-color: #e7d8c9;
+}
+header {
+  min-width: 50px;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eab37d;
+  flex-direction: column;
+  margin: 4rem;
+  padding: 2rem;
+  gap: var(--my-color-2);
+  border-radius: 1rem 0;
+
+  .highlight {
+    color: var(--highlight);
+    a {
+      text-decoration: none;
+      color: var(--my-color);
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+}
+main {
+  border-radius: 1rem 0;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #eab37d;
+  .highlight {
+    color: var(--highlight);
+  }
+  .sehenwürdigkeit {
+    a {
+      text-decoration: none;
+      color: var(--my-color-2);
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    a:hover {
+      transform: translateY(-3px);
+      color: var(--my-color);
+    }
+  }
+  .sicherheit {
+    hover {
+      transform: scale(1.05);
+    }
+    color: var(--my-color-2);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .reise {
+    color: var(--my-color-2);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+footer {
+  min-width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efd6bc;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 2rem;
+  gap: var(--my-color-2);
+  border-radius: 1rem 0;
+  font-size: small;
+}
