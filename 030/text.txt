@@ -1,0 +1,69 @@
+*1--Astrophysik & Weltraumforschung:
+
+Python ist die Standardsprache in der Astrophysik, da seine breite Verfügbarkeit von spezialisierten Bibliotheken komplexe Aufgaben wie Datenanalyse, Simulationen und Visualisierungen ermöglicht. Wichtige Bibliotheken für die Astrophysik sind unter anderem NumPy für numerische Berechnungen, Matplotlib für Diagramme und Astropy für astronomische Berechnungen
+
+Bioinformatik:
+
+Welche Probleme werden gelöst?
+Sequenzanalyse von DNA/RNA, Proteinstrukturanalyse, Management experimenteller biologischer Daten.
+
+Relevante Bibliothek:
+
+Biopython → Analyse biologischer Sequenzen & Strukturen
+
+Quantencomputing:
+
+Welche Probleme werden gelöst?
+Erstellung und Simulation von Quanten-Schaltkreisen, Einsatz von Quantenalgorithmen auf echten Qubits.
+
+Relevante Bibliothek:
+
+Qiskit (von IBM) → Quantenprogrammierung & Simulation
+
+**2--Dynamische Typisierung
+vorteile:
+Schnellere Entwicklung & Prototyping
+
+Kürzerer, lesbarer Code
+
+Hohe Flexibilität bei Datenstrukturen
+
+Global Interpreter Lock (GIL):
+Vorteil	:
+Einfachere Thread-Sicherheit	
+Ideal für I/O-Bound-Tasks	
+
+nachteil:
+Schlechte Multi-Thread-CPU-Performance
+Kein echtes Multi-Threading für CPU-Bound-Tasks
+
+Teil 2 — Professionelles Python-Entwicklungshabitat
+~ pyenv ---> Lokale Entwicklung, Feature-Branches
+~ apt/brew --> Server/CI-Umgebungen, DevOps
+
+Entwicklung → pyenv
+
+Produktivsysteme → apt/brew
+
+Klassensnippet:
+
+"Python Class": {
+  "prefix": "pclass",
+  "body": [
+    "class ${1:MyClass}:",
+    "    def __init__(self, ${2:args}):",
+    "        ${3:pass}",
+    "    def __str__(self):",
+    "        return f\"${1:MyClass}({$2})\""
+  ]
+}
+Funktionssnippet mit Type-Hints>
+
+"Python Function": {
+  "prefix": "pfunc",
+  "body": [
+    "def ${1:func_name}(${2:param}: int) -> int:",
+    "    \"\"\"${3:Description}\"\"\"",
+    "    return ${2:param}"
+  ]
+}
