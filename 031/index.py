@@ -1,15 +1,16 @@
 
-#preis = float(input("bitte füge Preis:  EuR  "))
+# Der dynamische Währungsumrechner mit Mehrwert
 def wecsGeld(preis): #name von function
   wecs = preis * 1.08  #macht preis mal US-Dollar  
   wecs2 = preis * 165.25 #macht preis (eru) mal Japanischen Yen (JPY)
   
   return wecs , wecs2
 
+print(wecsGeld(float(input("bitte füge Preis: EuR  ")))) #man kann preis einfügen
 
 
-#print(wecsGeld(float(input("bitte füge Preis: EuR  ")))) #man kann preis einfügen
 
+# Das Intelligente Profil-Analyse-Tool
 name = input("fügen sie bitte Ihre Name: ")
 alter =input("fügen sie bitte Ihrer Alter: ")
 wohnort =input("fügen sie bitte Ihrer Wohnort : ")
