@@ -1,0 +1,48 @@
+Durchgeführte Schritte
+
+Anlegen eines neuen Benutzers in phpMyAdmin
+In phpMyAdmin wurde ein neuer Benutzer mit eingeschränkten Rechten erstellt.
+Dieser Benutzer darf nicht selbstständig Datenbanken oder Tabellen erstellen bzw. löschen, da ihm keine globalen Rechte zugewiesen wurden und die Option „Grant all privileges on ONE DB“ nur für eine bestimmte Datenbank gesetzt wurde.
+Dadurch besitzt der Benutzer ausschließlich die benötigten Lese- und Schreibrechte innerhalb dieser einen Datenbank.
+
+Problem beim Erstellen von zwei getrennten Verbindungen
+Für die Aufgabe sollten zwei getrennte Verbindungen eingerichtet werden:
+
+eine mit administrativen Rechten (z. B. root)
+
+eine mit dem neu erstellten eingeschränkten Benutzer
+
+In phpMyAdmin war dies jedoch nicht möglich, weil kein Logout-Button angezeigt wurde und somit kein Benutzerwechsel stattfinden konnte.
+
+Ursache des Problems
+Die fehlende Logout-Option lag an der XAMPP-Konfiguration:
+phpMyAdmin war im „config“-Authentifizierungsmodus, wodurch automatisch immer mit dem Benutzer root angemeldet wurde.
+Dadurch erschien kein Login-Fenster und ein Benutzerwechsel war nicht möglich.
+
+Lösung in der Konfigurationsdatei
+In der Datei
+
+C:\xampp\phpMyAdmin\config.inc.php
+
+
+wurde die Zeile
+
+$cfg['Servers'][$i]['auth_type'] = 'config';
+
+
+in
+
+$cfg['Servers'][$i]['auth_type'] = 'cookie';
+
+
+geändert.
+
+Durch diese Anpassung verwendet phpMyAdmin nun den cookie-basierten Login, wodurch beim Öffnen von phpMyAdmin wieder ein Anmeldefenster angezeigt wird.
+Damit können zwei getrennte Verbindungen hergestellt werden:
+
+einmal als Administrator
+
+einmal als eingeschränkter Benutzer
+
+No privileges to create databases No privileges to create databases: bedeutet 
+„Der aktuelle Benutzer darf nur innerhalb der zugewiesenen Datenbank arbeiten, aber er hat keine Berechtigung, eine neue Datenbank zu erstellen.“
