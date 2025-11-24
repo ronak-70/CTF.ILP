@@ -1,0 +1,49 @@
+Der Hauptunterschied ist, dass virtuelle Maschinen (VMs) die gesamte Hardware virtualisieren und jeweils ein komplettes Betriebssystem ausführen, während Container nur das Betriebssystem virtualisieren und sich den Host-Kernel teilen
+
+
+Virtualisierungsebene:
+  	Virtuelle Maschinen (VMs):
+	    Abstraktion der Hardware; jede VM hat ein eigenes Betriebssystem.
+  	Container: 
+      Abstraktion der Betriebssystem-Dienste; teilt sich den Kernel des Host-Betriebssystems
+
+Ressourcenverbrauch:
+    Virtuelle Maschinen (VMs):
+      Hoch: Benötigt Ressourcen für das vollständige Gastbetriebssystem für jede VM.
+    Container:
+      Gering: Effizientere Nutzung, da sie sich den Host-Kernel teilen.
+Startzeit:
+    Virtuelle Maschinen (VMs):
+      Langsam: Mehrere Sekunden bis Minuten, da das gesamte Betriebssystem gestartet werden muss.
+    Container:  
+      Schnell: Wenige Sekunden, da sie nur die Anwendung und ihre Abhängigkeiten starten. 
+Isolation & Sicherheit:
+    Virtuelle Maschinen (VMs):
+        Sehr stark: Jede VM ist durch einen Hypervisor vom Host und anderen VMs getrennt.
+    Container: 
+        Teilweise: Starke Isolierung durch   Namensräume und Cgroups, aber der geteilte Kernel stellt ein potenzielles Sicherheitsrisiko dar.
+
+Ein entscheidender Vorteil der Containerisierung ist die Ermächtigung der Entwickler, die Bereitstellungsumgebung ihrer Anwendungen selbst zu definieren, anstatt sich auf Operations-Teams zu verlassen.
+
+
+Herausforderungen und Nachteile
+1.Sicherheit:
+  Images: Container-Images können Schwachstellen enthalten, insbesondere wenn sie von unsicheren Quellen stammen oder veraltete Komponenten nutzen.
+
+  Berechtigungen: Es ist entscheidend, Container mit minimalen Berechtigungen auszuführen, um das Risiko bei einem Angriff zu minimieren.
+
+  Netzwerk: Eine sichere Netzwerkkommunikation zwischen Containern muss aktiv konfiguriert werden, beispielsweise durch Mikrosegmentierung und Zugriffskontrollen.
+
+2.Orchestrierung und Management:
+  Komplexität: Die Verwaltung einer großen Anzahl von Containern kann sehr komplex werden, was den Einsatz von Orchestrierungsplattformen wie Kubernetes notwendig macht.
+
+  Know-how: Der Umgang mit Container-Plattformen erfordert spezielles technisches Wissen und Erfahrung, was nicht in allen Unternehmen vorhanden ist.
+
+  Fehlendes Personal: Der Mangel an IT-Administratoren, die Erfahrung mit Containern und den zugehörigen Plattformen haben, stellt eine große Herausforderung dar.
+
+3.Sonstige Nachteile:
+  Übergang zu Serverless: Einige Unternehmen überspringen Container und setzen direkt auf serverless Computing. Dies erfordert oft eine Neuentwicklung von Anwendungen und ist noch eine relativ junge Technologie.
+  
+  Applikationsanpassung: Für serverless Computing müssen Anwendungen oft umgeschrieben werden, um mit dieser Architektur kompatibel zu sein. 
+
+
