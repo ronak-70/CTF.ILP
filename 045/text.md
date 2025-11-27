@@ -64,7 +64,7 @@ Diese Fragen helfen dem Kind, auf natürliche, entspannte und spielerische Weise
 
 Wenn du möchtest, kann ich eine **bildhafte oder kartenbasierte Version dieser Fragen** erstellen, damit das Kind spielerischer darauf antwortet.“**
 
-=======================================================================================================
+============================================================================================
 
 ## Offizielle Prompteingabe 
 
@@ -111,5 +111,5 @@ Wenn du möchtest, kann ich eine **bildhafte oder kartenbasierte Version dieser 
     *(Erkennen natürlicher Vorlieben und Motivation)*
 
 -------------------------------------------------------------------------------------------------------
-=======================================================================================================
-##**„Wenn die Details der Prompts ausführlicher sind und genau festgelegt wird, was wir von der künstlichen Intelligenz erwarten, wird das Ergebnis deutlich hilfreicher und praxisorientierter.“**
+============================================================================================
+# **„Wenn die Details der Prompts ausführlicher sind und genau festgelegt wird, was wir von der künstlichen Intelligenz erwarten, wird das Ergebnis deutlich hilfreicher und praxisorientierter.“**
