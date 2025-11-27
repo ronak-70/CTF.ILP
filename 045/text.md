@@ -112,4 +112,21 @@ Wenn du möchtest, kann ich eine **bildhafte oder kartenbasierte Version dieser 
 
 -------------------------------------------------------------------------------------------------------
 ============================================================================================
-# **„Wenn die Details der Prompts ausführlicher sind und genau festgelegt wird, was wir von der künstlichen Intelligenz erwarten, wird das Ergebnis deutlich hilfreicher und praxisorientierter.“**
+## „Wenn die Details der Prompts ausführlicher sind und genau festgelegt wird, was wir von der künstlichen Intelligenz erwarten, wird das Ergebnis deutlich hilfreicher und praxisorientierter.“
+
+
+## Zusammenfassung der KI-Bildgeneratoren
+
+Tool,Benutzeroberfläche und Schlüsseleinstellungen
+DALL-E,"Hat meist eine einfache Benutzeroberfläche: eine Prompt Box für Texteingaben und begrenzte Einstellungen wie das Seitenverhältnis (Aspect Ratio). Manchmal gibt es Optionen zur ""Bearbeitung"" oder für ""Variationen"" des generierten Bildes."
+Midjourney,"Basiert auf Discord. Der Hauptbefehl ist /imagine. Einstellungen werden über Parameter wie --ar (Seitenverhältnis), --style (Stil) und --v (Modellversion) eingegeben."
+Stable Diffusion,"Nutzt verschiedene Online-Tools (z. B. Lexica, DreamStudio). Beinhaltet typischerweise eine Prompt Box, einen Negative Prompt (für Dinge, die vermieden werden sollen), den Seed (zur Reproduzierbarkeit von Ergebnissen) sowie Modelleinstellungen wie Sampler und Steps."
+
+## 🇩🇪 Anwendungsfälle von KI-Bildgeneratoren
+. Marketing: Schnelle Erstellung von individuellen Werbebildern, Social-Media-Bannern und ansprechenden Bildern für Landing Pages.
+
+. Produktentwicklung: Erstellung von ersten Prototypen (Mockups) oder konzeptuellen Renderings neuer Produkte (z. B. verschiedene Designs für ein Smartphone oder einen Stuhl).
+
+. Content-Erstellung: Schnelle Bebilderung für Blogartikel, Erstellung von YouTube-Video-Thumbnails (Cover) sowie die Produktion von Comicstrips oder ersten Storyboards.
+
+. Kunst und Design: Generierung von Konzeptzeichnungen (Concept Art), Finden von Inspiration für Maler/Designer und Erstellung einzigartiger Muster (z. B. für Stoffdesigns)
