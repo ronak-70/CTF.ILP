@@ -117,10 +117,13 @@ Wenn du möchtest, kann ich eine **bildhafte oder kartenbasierte Version dieser 
 
 ## Zusammenfassung der KI-Bildgeneratoren
 
-Tool,Benutzeroberfläche und Schlüsseleinstellungen
-DALL-E,"Hat meist eine einfache Benutzeroberfläche: eine Prompt Box für Texteingaben und begrenzte Einstellungen wie das Seitenverhältnis (Aspect Ratio). Manchmal gibt es Optionen zur ""Bearbeitung"" oder für ""Variationen"" des generierten Bildes."
-Midjourney,"Basiert auf Discord. Der Hauptbefehl ist /imagine. Einstellungen werden über Parameter wie --ar (Seitenverhältnis), --style (Stil) und --v (Modellversion) eingegeben."
-Stable Diffusion,"Nutzt verschiedene Online-Tools (z. B. Lexica, DreamStudio). Beinhaltet typischerweise eine Prompt Box, einen Negative Prompt (für Dinge, die vermieden werden sollen), den Seed (zur Reproduzierbarkeit von Ergebnissen) sowie Modelleinstellungen wie Sampler und Steps."
+Tool -->       Benutzeroberfläche und       Schlüsseleinstellungen
+
+DALL-E -->    Hat meist eine einfache Benutzeroberfläche: eine Prompt Box für Texteingaben und begrenzte Einstellungen wie das Seitenverhältnis (Aspect Ratio). Manchmal gibt es Optionen zur ""Bearbeitung"" oder für ""Variationen"" des generierten Bildes.
+
+Midjourney --> Basiert auf Discord.Der Hauptbefehl ist /imagine. Einstellungen werden über Parameter wie --ar (Seitenverhältnis), --style (Stil) und --v (Modellversion) eingegeben.
+
+Stable Diffusion -->  Nutzt verschiedene Online-Tools (z. B. Lexica, DreamStudio). Beinhaltet typischerweise eine Prompt Box, einen Negative Prompt (für Dinge, die vermieden werden sollen), den Seed (zur Reproduzierbarkeit von Ergebnissen) sowie Modelleinstellungen wie Sampler und Steps.
 
 ## 🇩🇪 Anwendungsfälle von KI-Bildgeneratoren
 . Marketing: Schnelle Erstellung von individuellen Werbebildern, Social-Media-Bannern und ansprechenden Bildern für Landing Pages.
